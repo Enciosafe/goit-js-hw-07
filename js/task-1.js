@@ -31,4 +31,6 @@ function findCategory(numberOfCategory) {
   }
 }
 
-console.log(findCategory(1)); // НУЖНО ЗАДАТЬ НОМЕР КАТЕГОРИИ
+console.log(findCategory(1));
+console.log(findCategory(2));
+console.log(findCategory(3));

@@ -18,13 +18,13 @@ const images = [
 
 const galleryRef = document.querySelector('#gallery');
 const fullGallery = images
-  .map(image => `<li><img src=${image.url} alt=${image.alt}></li>`)
+  .map(
+    image =>
+      `<li><img class=${'gallery--item'} src=${image.url} alt=${
+        image.alt
+      }></li>`,
+  )
   .join('');
 
 galleryRef.insertAdjacentHTML('beforeend', fullGallery);
 galleryRef.classList.add('gallery');
-
-const galleryItems = galleryRef.querySelectorAll('li');
-for (let item of galleryItems) {
-  item.firstElementChild.classList.add('gallery--item');
-}
